@@ -562,7 +562,7 @@ let statement_effect_independent_in_join_statement_implications
   rvalue_computation_doesnt_depend_on_global_variables vs pc_relation join_tid actor s1 s2
 
 #pop-options
-#push-options "--z3rlimit 30"
+#push-options "--z3rlimit 60"
 
 let statement_effect_independent_in_alloc_successful_statement_implications
   (vs: list var_id_t)
