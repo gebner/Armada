@@ -2,7 +2,7 @@
 # Customize these variables for your project
 ################################################################################
 # The root files of your project, from which to begin scanning dependences
-FSTAR_FILES=MyProgramProof.fst MyVarIntroProof.fst MyVarHidingProof.fst GlobalVarExampleInvariant.fst
+FSTAR_FILES=$(wildcard *.fst *.fsti)
 
 FSTAR_EXEC?=$(shell which fstar.exe)
 Z3_EXEC?=$(shell which z3)
